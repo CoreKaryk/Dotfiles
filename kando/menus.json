@@ -1,0 +1,344 @@
+{
+  "menus": [
+    {
+      "shortcut": "Control+Space",
+      "shortcutID": "menu",
+      "centered": true,
+      "root": {
+        "type": "submenu",
+        "name": "Clean Menu",
+        "icon": "circle",
+        "iconTheme": "material-symbols-rounded",
+        "children": [
+          {
+            "type": "submenu",
+            "name": "Apps",
+            "icon": "apps",
+            "iconTheme": "material-symbols-rounded",
+            "children": [
+              {
+                "type": "command",
+                "data": {
+                  "command": "spotify-launcher"
+                },
+                "name": "Spotify",
+                "icon": "spotify",
+                "iconTheme": "simple-icons"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "dolphin"
+                },
+                "name": "Dolphin",
+                "icon": "dolphin",
+                "iconTheme": "simple-icons"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "kitty nvim $HOME/.config/hypr/hyprland/"
+                },
+                "name": "Hyprland",
+                "icon": "hyprland",
+                "iconTheme": "simple-icons"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "firefox\n"
+                },
+                "name": "Firefox",
+                "icon": "firefoxbrowser",
+                "iconTheme": "simple-icons"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "kitty"
+                },
+                "name": "Terminal",
+                "icon": "terminal",
+                "iconTheme": "material-symbols-rounded"
+              }
+            ]
+          },
+          {
+            "type": "submenu",
+            "name": "Bookmarks",
+            "icon": "folder_special",
+            "iconTheme": "material-symbols-rounded",
+            "children": [
+              {
+                "type": "command",
+                "data": {
+                  "command": "kitty nvim ~/Downloads\n"
+                },
+                "name": "Downloads",
+                "icon": "download",
+                "iconTheme": "material-symbols-rounded",
+                "angle": 0
+              },
+              {
+                "type": "command",
+                "name": "Run Command",
+                "icon": "wine",
+                "iconTheme": "simple-icons",
+                "data": {
+                  "command": "kitty nvim ~/.wine\n",
+                  "detached": true,
+                  "isolated": false,
+                  "delayed": false
+                }
+              },
+              {
+                "type": "command",
+                "name": "Config",
+                "icon": "settings-item.svg",
+                "iconTheme": "kando",
+                "data": {
+                  "command": "kitty nvim ~/.config/\n",
+                  "detached": true,
+                  "isolated": false,
+                  "delayed": false
+                },
+                "angle": 180
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "kitty nvim ~/Pictures"
+                },
+                "name": "Pictures",
+                "icon": "imagesmode",
+                "iconTheme": "material-symbols-rounded",
+                "angle": 240
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "kitty nvim ~"
+                },
+                "name": "Home",
+                "icon": "home",
+                "iconTheme": "material-symbols-rounded",
+                "angle": 300
+              }
+            ],
+            "angle": 240
+          },
+          {
+            "type": "submenu",
+            "name": "Web Links",
+            "icon": "public",
+            "iconTheme": "material-symbols-rounded",
+            "children": [
+              {
+                "type": "uri",
+                "data": {
+                  "uri": "https://www.pw.live"
+                },
+                "name": "PW",
+                "icon": "pwa",
+                "iconTheme": "simple-icons",
+                "angle": 180
+              },
+              {
+                "type": "uri",
+                "data": {
+                  "uri": "https://github.com/kando-menu/kando"
+                },
+                "name": "Kando on GitHub",
+                "icon": "github",
+                "iconTheme": "simple-icons",
+                "angle": 240
+              },
+              {
+                "type": "uri",
+                "data": {
+                  "uri": "https://www.chess.com\n"
+                },
+                "name": "Chess",
+                "icon": "chessdotcom",
+                "iconTheme": "simple-icons",
+                "angle": 300
+              }
+            ],
+            "angle": 300
+          },
+          {
+            "type": "redirect",
+            "name": "Arch",
+            "icon": "archlinux",
+            "iconTheme": "simple-icons",
+            "data": {
+              "menu": "Arch"
+            },
+            "angle": 360
+          },
+          {
+            "type": "hotkey",
+            "name": "Simulate Hotkey",
+            "icon": "settings_power",
+            "iconTheme": "material-symbols-rounded",
+            "data": {
+              "hotkey": "AltLeft+Tab",
+              "delayed": true
+            },
+            "angle": 420
+          },
+          {
+            "type": "submenu",
+            "name": "Audio",
+            "icon": "play_circle",
+            "iconTheme": "material-symbols-rounded",
+            "children": [
+              {
+                "type": "hotkey",
+                "data": {
+                  "hotkey": "MediaTrackNext",
+                  "delayed": false
+                },
+                "name": "Next Track",
+                "icon": "skip_next",
+                "iconTheme": "material-symbols-rounded",
+                "angle": 60
+              },
+              {
+                "type": "hotkey",
+                "data": {
+                  "hotkey": "MediaPlayPause",
+                  "delayed": false
+                },
+                "name": "Play / Pause",
+                "icon": "play_pause",
+                "iconTheme": "material-symbols-rounded",
+                "angle": 120
+              },
+              {
+                "type": "hotkey",
+                "data": {
+                  "hotkey": "AudioVolumeMute",
+                  "delayed": false
+                },
+                "name": "Mute",
+                "icon": "music_off",
+                "iconTheme": "material-symbols-rounded",
+                "angle": 180
+              },
+              {
+                "type": "hotkey",
+                "data": {
+                  "hotkey": "MediaTrackPrevious",
+                  "delayed": false
+                },
+                "name": "Previous Track",
+                "icon": "skip_previous",
+                "iconTheme": "material-symbols-rounded",
+                "angle": 240
+              }
+            ],
+            "angle": 480
+          }
+        ]
+      },
+      "anchored": false,
+      "hoverMode": false
+    },
+    {
+      "shortcut": "",
+      "shortcutID": "menu",
+      "centered": false,
+      "anchored": false,
+      "hoverMode": false,
+      "tags": [],
+      "root": {
+        "type": "submenu",
+        "name": "Arch",
+        "icon": "archlinux",
+        "iconTheme": "simple-icons",
+        "children": [
+          {
+            "type": "command",
+            "data": {
+              "command": "kitty nvim /home/vdt/.config/hypr/hyprland/"
+            },
+            "name": "Hyprland",
+            "icon": "hyprland",
+            "iconTheme": "simple-icons",
+            "angle": 240
+          },
+          {
+            "type": "submenu",
+            "name": "Session",
+            "icon": "menu",
+            "iconTheme": "material-symbols-rounded",
+            "data": {},
+            "children": [
+              {
+                "type": "command",
+                "name": "Shutdown",
+                "icon": "power_settings_new",
+                "iconTheme": "material-symbols-rounded",
+                "data": {
+                  "command": "shutdown now",
+                  "detached": true,
+                  "isolated": false,
+                  "delayed": false
+                },
+                "angle": 60
+              },
+              {
+                "type": "command",
+                "name": "Reboot",
+                "icon": "restart_alt",
+                "iconTheme": "material-symbols-rounded",
+                "data": {
+                  "command": "reboot",
+                  "detached": true,
+                  "isolated": false,
+                  "delayed": false
+                },
+                "angle": 300
+              },
+              {
+                "type": "command",
+                "name": "Lock",
+                "icon": "lock",
+                "iconTheme": "material-symbols-rounded",
+                "data": {
+                  "command": "hyprlock",
+                  "detached": true,
+                  "isolated": false,
+                  "delayed": false
+                },
+                "angle": 360
+              }
+            ],
+            "angle": 360
+          },
+          {
+            "type": "redirect",
+            "name": "Clean Menu",
+            "icon": "circle",
+            "iconTheme": "material-symbols-rounded",
+            "data": {
+              "menu": "Clean Menu"
+            },
+            "angle": 540
+          }
+        ]
+      }
+    }
+  ],
+  "collections": [
+    {
+      "name": "Favorites",
+      "icon": "favorite",
+      "iconTheme": "material-symbols-rounded",
+      "tags": [
+        "favs"
+      ]
+    }
+  ]
+}

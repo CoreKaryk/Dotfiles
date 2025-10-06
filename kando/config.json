@@ -1,0 +1,54 @@
+{
+  "locale": "auto",
+  "showIntroductionDialog": false,
+  "menuTheme": "neon-lights",
+  "darkMenuTheme": "clean-circle",
+  "menuThemeColors": {
+    "default": {
+      "hover-color": "rgb(255 200 200)"
+    },
+    "navigation": {
+      "background-layer-left": "rgb(0 0 0 / 0.54)",
+      "background-layer-right": "rgb(0 0 0 / 0.54)"
+    }
+  },
+  "darkMenuThemeColors": {
+    "neon-lights": {
+      "glow-color": "rgb(255 0 0 / 0.85)",
+      "connector-color": "rgb(255 0 0 / 0.85)"
+    }
+  },
+  "enableDarkModeForMenuThemes": true,
+  "soundTheme": "simple-clicks",
+  "soundVolume": 1,
+  "ignoreWriteProtectedConfigFiles": false,
+  "settingsWindowColorScheme": "dark",
+  "settingsWindowFlavor": "sakura-dark",
+  "trayIconFlavor": "white",
+  "lazyInitialization": false,
+  "enableVersionCheck": false,
+  "zoomFactor": 1,
+  "centerDeadZone": 50,
+  "minParentDistance": 150,
+  "dragThreshold": 15,
+  "fadeInDuration": 150,
+  "fadeOutDuration": 200,
+  "keepInputFocus": false,
+  "enableMarkingMode": true,
+  "enableTurboMode": true,
+  "warpMouse": true,
+  "hoverModeNeedsConfirmation": false,
+  "gestureMinStrokeLength": 150,
+  "gestureMinStrokeAngle": 20,
+  "gestureJitterThreshold": 10,
+  "gesturePauseTimeout": 100,
+  "fixedStrokeLength": 0,
+  "rmbSelectsParent": true,
+  "enableGamepad": true,
+  "gamepadBackButton": 1,
+  "gamepadCloseButton": 2,
+  "sameShortcutBehavior": "close",
+  "useDefaultOsShowSettingsHotkey": true,
+  "hideSettingsButton": false,
+  "settingsButtonPosition": "bottom-right"
+}
